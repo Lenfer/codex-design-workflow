@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.design-workflow/
+.design-workflow-install.lock
+skills/design/installation.json

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720"
+role="img" aria-labelledby="workflow-title workflow-desc" id="workflow-root">
+<title id="workflow-title">From intent to verified interface</title>
+<desc id="workflow-desc">Design routes a brief through pen.dev concepts, Penpot systems, implementation and BrowserOS Neo verification.</desc>
+<defs>
+      <style>#workflow-root { color: #20283c; }
+      #workflow-root .diagram-container { width:100%;overflow-x:auto }
+      #workflow-root text { font-family:Arial,Helvetica,sans-serif;fill:#20283c }
+      #workflow-root .title { font-family:Georgia,serif;font-size:48px;letter-spacing:-1px }
+      #workflow-root .eyebrow { font-family:monospace;font-size:13px;letter-spacing:2px;fill:#566278 }
+      #workflow-root .heading { font-size:24px;font-weight:600 }
+      #workflow-root .body { font-size:18px }
+      #workflow-root .small { font-size:16px;fill:#566278 }
+      #workflow-root .tiny { font-size:14px;fill:#566278 }
+      #workflow-root .model { font-family:monospace;font-size:14px;fill:#384da0 }
+      #workflow-root .line { fill:none;stroke:#566278;stroke-width:1.5 }
+      #workflow-root .rule { fill:none;stroke:#d6dbe5;stroke-width:1 }
+      #workflow-root .card { fill:#fff;stroke:#c8cfdd;stroke-width:1;rx:8 }
+      #workflow-root .focal { fill:#e9ecf8;stroke:#384da0;stroke-width:1.5;rx:8 }
+      @media print {
+#workflow-root .diagram-container { overflow-x:visible }
+}</style><marker id="workflow-workflow-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#566278"/></marker></defs>
+<rect width="1280" height="720" fill="#f4f5f8"/>
+<text x="40" y="44" class="eyebrow">CODEX DESIGN WORKFLOW / 01 — PROCESS</text>
+<text x="40" y="108" class="title">From intent to verified interface</text>
+<text x="40" y="148" class="small">An approved direction becomes a reusable system, then a working interface.</text><path d="M180 240 V288" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M320 396 H348" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M488 240 V288" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M628 396 H656" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M796 240 V288" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M936 396 H964" class="line" marker-end="url(#workflow-workflow-arrow)"/><path d="M1104 240 V288" class="line" marker-end="url(#workflow-workflow-arrow)"/><rect x="40" y="184" width="1200" height="56" class="focal"/><text x="60" y="219" class="heading">DESIGN</text><text x="208" y="219" class="body">Brief + context → one lead skill + targeted specialists</text><rect x="40" y="288" width="280" height="288" class="card"/><text x="60" y="320" class="eyebrow">01</text><text x="60" y="356" class="heading">pen.dev</text><text x="60" y="384" class="small">Concept</text><text x="60" y="428" class="body">Composition, imagery,</text><text x="60" y="456" class="body">icons and motion intent</text><path d="M60 472 H300" class="rule"/><text x="60" y="504" class="small">Editable concept + assets</text><text x="60" y="532" class="small">+ motion prototype</text><text x="60" y="556" class="model">Sol · high</text><rect x="348" y="288" width="280" height="288" class="card"/><text x="368" y="320" class="eyebrow">02</text><text x="368" y="356" class="heading">Penpot</text><text x="368" y="384" class="small">Design system</text><text x="368" y="428" class="body">Tokens, components,</text><text x="368" y="456" class="body">states and responsiveness</text><path d="M368 472 H608" class="rule"/><text x="368" y="504" class="small">System + screen IDs</text><text x="368" y="532" class="small">+ motion specification</text><text x="368" y="556" class="model">Sol · high</text><rect x="656" y="288" width="280" height="288" class="card"/><text x="676" y="320" class="eyebrow">03</text><text x="676" y="356" class="heading">Project code</text><text x="676" y="384" class="small">Implementation</text><text x="676" y="428" class="body">Reuse the system,</text><text x="676" y="456" class="body">assets and components</text><path d="M676 472 H916" class="rule"/><text x="676" y="504" class="small">Working UI</text><text x="676" y="532" class="small">+ interaction behavior</text><text x="676" y="556" class="model">Sol · medium</text><rect x="964" y="288" width="280" height="288" class="card"/><text x="984" y="320" class="eyebrow">04</text><text x="984" y="356" class="heading">BrowserOS Neo</text><text x="984" y="384" class="small">Verification</text><text x="984" y="428" class="body">Compare real rendering;</text><text x="984" y="456" class="body">exercise user scenarios</text><path d="M984 472 H1224" class="rule"/><text x="984" y="504" class="small">Verified result</text><text x="984" y="532" class="small">+ focused corrections</text><text x="984" y="556" class="model">Sol · high</text><text x="40" y="620" class="eyebrow">MOTION IS SPECIFIED, BUILT AND VERIFIED THROUGHOUT</text><text x="40" y="652" class="body">Icons + complex procedural motion in pen.dev: Astra · medium</text><text x="40" y="684" class="tiny">Models are recommendations. Fix discrepancies at the relevant stage; preserve the approved style.</text>
+</svg>

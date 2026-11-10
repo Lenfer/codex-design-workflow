@@ -1,0 +1,177 @@
+{
+  "frontend": {
+    "source": "https://github.com/anthropics/skills.git",
+    "paths": [
+      "skills/frontend-design"
+    ],
+    "entrypoints": [
+      "skills/frontend-design/SKILL.md"
+    ],
+    "license_paths": [
+      "skills/frontend-design/LICENSE.txt"
+    ],
+    "role": "Concept and intentional UI direction",
+    "kind": "skill",
+    "dependencies": [],
+    "limitations": [],
+    "commit": "ca45fc496a3436251f191354091d557da31c15b5",
+    "tree_sha256": "a9332a94997414e708fdf787432a1ea7cb3c3a5542ac34ce4cbd33911c048f2d",
+    "license": "Apache-2.0"
+  },
+  "taste": {
+    "source": "https://github.com/Leonxlnx/taste-skill.git",
+    "paths": [
+      "skills/taste-skill",
+      "LICENSE",
+      "README.md"
+    ],
+    "entrypoints": [
+      "skills/taste-skill/SKILL.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "Selected company-site workflow; constrained layout and assets",
+    "kind": "skill",
+    "dependencies": [
+      "Node >=22",
+      "optional ffmpeg; browser checks adapted to Neo"
+    ],
+    "limitations": [
+      "Original headless check/perf/shoot scripts are NOT approved for execution. Neo checks do not claim detector equivalence."
+    ],
+    "commit": "9b4bf937a1f69348126959c15d2f99a73e65699b",
+    "tree_sha256": "75ebb9aad0029eafad9961711e7510ef448cc3a0297e02b7de1d67a2965f9fdb",
+    "license": "MIT"
+  },
+  "uiux": {
+    "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "paths": [
+      ".claude/skills/ui-ux-pro-max",
+      "LICENSE",
+      "README.md"
+    ],
+    "entrypoints": [
+      ".claude/skills/ui-ux-pro-max/SKILL.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "Targeted UX/stack search and alternatives",
+    "kind": "skill",
+    "dependencies": [
+      "Python 3 standard library"
+    ],
+    "limitations": [],
+    "commit": "b7d5353e0130feb8c5574ef1251f8a1db1873ccb",
+    "tree_sha256": "fc9df51f26f89923563709d4fd8f4425b3eaee3ba79f0d393b0858e0767f29dc",
+    "license": "MIT"
+  },
+  "impeccable": {
+    "source": "https://github.com/pbakaus/impeccable.git",
+    "paths": [
+      ".agents/skills/impeccable",
+      "LICENSE",
+      "README.md"
+    ],
+    "entrypoints": [
+      ".agents/skills/impeccable/SKILL.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "UX critique, UI hardening, refinement",
+    "kind": "skill",
+    "dependencies": [
+      "Direct-context instructions; optional engine is not installed"
+    ],
+    "limitations": [
+      "No installer hooks, live/Apply, rendered detector or automatic subagents."
+    ],
+    "commit": "c3bb418ee38ee49a6b999b7752c1368f3123a2bd",
+    "tree_sha256": "5fe1028d6cc938415844fff9525999f260606f01ec8e21966e81c0405455122f",
+    "license": "Apache-2.0"
+  },
+  "emil": {
+    "source": "https://github.com/emilkowalski/skill.git",
+    "paths": [
+      "skills",
+      "LICENSE",
+      "README.md"
+    ],
+    "entrypoints": [
+      "skills/animate-expo/SKILL.md",
+      "skills/animate/SKILL.md",
+      "skills/animation-performance/SKILL.md",
+      "skills/animation-vocabulary/SKILL.md",
+      "skills/apple-design/SKILL.md",
+      "skills/ask-sonner/SKILL.md",
+      "skills/break-ui/SKILL.md",
+      "skills/choreograph/SKILL.md",
+      "skills/emil-design-eng/SKILL.md",
+      "skills/find-animation-opportunities/SKILL.md",
+      "skills/improve-animations/SKILL.md",
+      "skills/mobile-native/SKILL.md",
+      "skills/pick-ui-library/SKILL.md",
+      "skills/prototype/SKILL.md",
+      "skills/remove-animations/SKILL.md",
+      "skills/review-animations/SKILL.md",
+      "skills/write-swift/SKILL.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "Motion and interaction specialists",
+    "kind": "skill-family",
+    "dependencies": [],
+    "limitations": [],
+    "commit": "c8a79627b59d72d764d6ab6f2c87c09a48169833",
+    "tree_sha256": "a4154970ecd056fe6581867e6cff9196e7757eb82677dd3a9c9427b122b9fd76",
+    "license": "MIT"
+  },
+  "design-md": {
+    "source": "https://github.com/google-labs-code/design.md.git",
+    "paths": [
+      "docs/spec.md",
+      "README.md",
+      "LICENSE",
+      "packages/cli/package.json"
+    ],
+    "entrypoints": [
+      "docs/spec.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "Project design-system format and validation",
+    "kind": "format",
+    "dependencies": [
+      "Specification only; optional npm CLI must be installed separately"
+    ],
+    "limitations": [],
+    "commit": "1ed38aa9dd4451b9039f9aeb9ed1d2579edafddf",
+    "tree_sha256": "3878f4295be52697aa5e06a4c8d55596df7a4d4e0513e576e38ec8fa1f7fc6ea",
+    "license": "Apache-2.0"
+  },
+  "awesome": {
+    "source": "https://github.com/VoltAgent/awesome-design-md.git",
+    "paths": [
+      "design-md",
+      "README.md",
+      "LICENSE"
+    ],
+    "entrypoints": [
+      "README.md"
+    ],
+    "license_paths": [
+      "LICENSE"
+    ],
+    "role": "Optional external design references",
+    "kind": "references",
+    "dependencies": [],
+    "limitations": [],
+    "commit": "fcc70284932276d085f01ef9f83edde90b1258cb",
+    "tree_sha256": "c55498149596e30870fe4200d9aa8da547cdfeb693dc479b26e03a02df211472",
+    "license": "MIT"
+  }
+}
