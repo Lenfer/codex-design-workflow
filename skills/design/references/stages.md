@@ -1,6 +1,6 @@
 # Stage handoffs
 
-## Concept: pen.dev
+## Concept: Penpot
 
 Start from the product scenario, real copy, brand materials, existing decisions and
 constraints. For an ongoing project the direction is already selected. Offer a
@@ -10,20 +10,23 @@ Use Frontend Design as the default lead, or select Taste after checking its stro
 layout constraints. UI/UX Pro Max can answer specific questions; Awesome Design MD
 can supply references. Their suggestions must fit the product.
 
-In pen.dev show composition and character at target sizes. Distinguish reference
+In Penpot show composition and character at target sizes. Distinguish reference
 images, photographs and concept renders from final UI assets. Keep provenance,
 resolution and licenses for important resources. Do not invent product facts from
 stock images or another company's website.
 
 Define what motion communicates and how it responds to the user. Key states or a
 small reproducible prototype may suffice; a static board does not prove animation.
-For icons and complex procedural animation read pen.dev's current icons/Generate
-and scripts-and-shaders instructions when those capabilities are available.
+Create vector icons and artwork as SVG. For raster assets use ImageGen, following
+its native skill when available. Preserve source files and add them to Penpot.
+Check sets for consistent geometry, stroke weight, palette and readability at
+target sizes. Generated artwork does not replace editable UI.
 
 Hand off the chosen composition, size relationships, colors, typography, original
 assets, target sizes/states, motion character, decisions and open questions.
-Save an editable .pen or a confirmed managed draft, IDs and preview in the project's
-artifact location. Confirm export/save before claiming a native file is ready.
+Save Penpot file/page/board links and IDs, source assets and previews in the
+project's artifact location. Verify persistence; confirm export before claiming
+an exported file is ready. Continue into the system stage in the same workspace.
 
 ## System and assets: Penpot
 

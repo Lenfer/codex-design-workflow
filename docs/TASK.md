@@ -2,11 +2,11 @@
 
 Publish an English-language public repository that another person can hand to Codex to set up the same design workflow.
 
-The workflow covers pen.dev concepts, Penpot design systems, implementation, motion and browser verification. It includes the custom Design router and its seven upstream skill/resource families. Diagram Design is independent and excluded.
+The workflow covers concepts and design systems in Penpot, direct SVG or ImageGen asset creation, implementation, motion and browser verification. It includes the custom Design router and its seven upstream skill/resource families. Diagram Design is independent and excluded.
 
 Deliver a README, an installation prompt, a reproducible installer, original upstream references and licenses, workflow/routing documentation, model recommendations and setup guidance for the recipient's MCP connections.
 
-Recipients install pen.dev and Penpot themselves. BrowserOS Neo setup must follow its official platform instructions and pair with the recipient's Codex. Credentials, browser profiles, private projects and machine-specific configuration must stay local.
+Recipients set up Penpot themselves. BrowserOS Neo setup must follow its official platform instructions and pair with the recipient's Codex. ImageGen is optional and uses the recipient's own access. Credentials, browser profiles, private projects and machine-specific configuration must stay local.
 
 Acceptance criteria:
 

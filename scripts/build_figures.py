@@ -54,7 +54,7 @@ def document(slug,title,desc,subtitle,body):
 def workflow():
     slug='workflow'
     body=''.join(arrow(f'M{x} 280 H{x+60}',slug) for x in [216,452,688])
-    rows=[(40,'01  Concept','pen.dev',['Layout and','original assets']),
+    rows=[(40,'01  Concept','Penpot',['Layout and','SVG / ImageGen assets']),
           (276,'02  System','Penpot',['Tokens, components','and screen states']),
           (512,'03  Build','Project code',['Working UI','and interactions']),
           (748,'04  Check','BrowserOS Neo',['Visual comparison','and user scenarios'])]
@@ -76,8 +76,8 @@ def workflow():
     body+=lines(40,536,['Codex uses the Design skill to choose specialists for these stages.',
                          'For a small change, start at the stage that needs work.'],'body',28)
     document(slug,'From a screen idea to a working UI',
-             'Codex carries the concept and source assets into a design system, implementation and browser checks.',
-             'Codex passes layout decisions and assets between tools.',body)
+             'Codex develops the concept and system in Penpot, then implements and checks the interface.',
+             'Concept and system share a Penpot workspace; source assets stay reusable.',body)
 
 
 def elbow(sx,sy,cx,ex,ey):
@@ -114,11 +114,10 @@ def setup():
     body+=rect(64,216,368,64,'focal')+text(84,244,'Design entry skill','body')+text(84,268,'design / SKILL.md','code')
     body+=rect(64,300,368,80)+text(84,332,'7 pinned source collections','body')+text(84,360,'Original files, licenses and hash checks','small')
     body+=lines(64,432,['Run doctor to verify these files.','The installer preserves Codex settings.'])
-    for y,name,action in [(216,'BrowserOS Neo','Pair Codex on its MCP connection board.'),
-                          (300,'pen.dev','Install the app and connect its tools.'),
-                          (384,'Penpot','Set up your account and workspace.')]:
+    for y,name,action in [(232,'BrowserOS Neo','Pair Codex on its MCP connection board.'),
+                          (344,'Penpot','Set up your account and workspace.')]:
         body+=text(528,y+24,name,'body')+text(528,y+50,action,'tiny')
-    body+=lines(40,540,['Then test live access: read a browser page and the design apps’ current state.'], 'body')
+    body+=lines(40,540,['Then test live access: read a browser page and the Penpot file state.'], 'body')
     document(slug,'Install skills, then connect your apps',
              'The installer places Design and seven source collections on disk; the recipient connects apps through their own MCP setup.',
              'MCP lets Codex call tools in your own apps and accounts.',body)

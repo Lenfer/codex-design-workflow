@@ -46,14 +46,6 @@ the connection, ask Codex to list tabs, open a public page in a temporary tab, r
 it and close that tab. Record the URL, date and result in your project's existing
 notes. Keep profiles, cookies and sensitive raw logs out of Git.
 
-## pen.dev
-
-Install [pen.dev](https://www.pen.dev/) yourself. Configuring its Codex integration
-is a manual step; this bundle does not configure it. Follow the app's current
-Codex setup instructions, then ask Codex to read the native design instructions
-and current app state. Some integrations expose these tools under the name `pencil`.
-Confirm the intended app and file before making design changes.
-
 ## Penpot
 
 Set up [Penpot](https://penpot.app/) through its hosted service or your own
@@ -64,9 +56,15 @@ Choosing and configuring a Penpot MCP integration is a manual step. Select one
 that supports your deployment and follow that integration's documentation; this
 bundle does not choose, install or configure it. Once its tools appear in Codex,
 read the overview and confirm the workspace and file before making changes. The
-bundle does not install a Penpot server. A transfer from pen.dev to Penpot still needs
-editable components and assets; inspect the result instead of assuming a lossless
-file import.
+bundle does not install a Penpot server. Concepts and the reusable system live in
+Penpot. Keep imported assets' source files and UI text and controls editable.
+
+## Optional asset generation
+
+Codex can author vector icons and artwork as SVG. For raster illustrations and
+assets, use ImageGen when it is available in the recipient's environment and read
+its native instructions. Preserve originals and add the assets to Penpot. The
+installer does not add an image-generation service or change model settings.
 
 ## Verify the setup
 
@@ -76,7 +74,6 @@ file import.
 | Skill discovery | Codex can read `design` in the intended project and session. |
 | MCP configuration | Codex lists the integration you configured. |
 | Neo access | Codex opens and reads a public page through Neo. |
-| pen.dev access | Codex reads the design instructions and state of the intended app. |
 | Penpot access | Codex reads the overview and file state in the intended instance. |
 
 Mark a check as pending if the tool is unavailable. Run these checks on each

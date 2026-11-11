@@ -23,5 +23,5 @@ their original terms and notices. References to brands, images and external
 designs do not grant trademark or separate media rights. No upstream engine
 binaries, browser profiles, credentials or personal Codex configuration are bundled.
 
-BrowserOS Neo, pen.dev, Penpot and Codex are separately installed products. Their
+BrowserOS Neo, Penpot, ImageGen and Codex are separate products or services. Their
 names identify integrations; this project does not imply their endorsement.

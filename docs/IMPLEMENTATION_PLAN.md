@@ -7,4 +7,4 @@
 5. Test against a clean temporary target, repeat the install, verify all packages and prove conflict and tamper detection. Keep network and live-app verification separate from filesystem tests.
 6. Prepare the exact initial commit scope for review. After commit authorization, create the public repository, publish the tested files and verify anonymous access and the install prompt link.
 
-V1 uses pinned releases. Updates are deliberate manifest changes followed by tests; no upstream version changes during an active design stage. BrowserOS, pen.dev and Penpot setup is handled by the receiving agent using official setup instructions and the user's own local endpoints.
+V1 uses pinned releases. Updates are deliberate manifest changes followed by tests; no upstream version changes during an active design stage. BrowserOS and Penpot setup is handled by the receiving agent using official setup instructions and the user's own local endpoints. Asset creation uses SVG or optionally ImageGen; the installer does not configure image-generation access.

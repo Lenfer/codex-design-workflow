@@ -8,11 +8,12 @@ recipient's Codex environment and preserve their settings unless they request a 
 | --- | --- | --- |
 | Brief, concept and routing | GPT-6.1 Sol | High |
 | Design system and handoff | GPT-6.1 Sol | High |
-| Icons and complex procedural animation in pen.dev | GPT-6 Astra | Medium |
+| Icon sets, artwork and complex motion | GPT-6 Astra | Medium |
 | Routine implementation | GPT-6.1 Sol | Medium |
 | Complex implementation, diagnosis and verification | GPT-6.1 Sol | High |
 
-The owner selected Astra Medium for icons and complex pen.dev animation. The Sol
-rows are suggestions. These settings describe the agent controlling the tools;
-pen.dev may use its own service to generate assets. The bundle leaves model settings
-and API access unchanged. Availability depends on the recipient's account.
+These rows are suggestions for the agent directing the task. They do not select
+an image-generation model. Use SVG for vector artwork and ImageGen for raster
+assets when available, then add the source assets to Penpot. The bundle leaves
+model settings and API access unchanged. Availability depends on the recipient's
+account.

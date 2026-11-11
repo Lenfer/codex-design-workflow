@@ -1,7 +1,7 @@
 # Codex Design Workflow
 
-A set of Codex skills for designing and building interfaces with pen.dev and
-Penpot. Use it to take a new screen from concept to code, or to improve an existing
+A set of Codex skills for designing and building interfaces with Penpot.
+Use it to take a new screen from concept to code, or to improve an existing
 interface while keeping its visual style.
 
 A skill is a folder of instructions that Codex reads for a particular task. This
@@ -9,7 +9,7 @@ package adds a `design` skill that tells Codex which specialist to use and what 
 carry from one stage to the next: source assets, tokens, components and interaction
 rules. It downloads original skills and reference material from seven repositories.
 
-![Codex develops a concept in pen.dev, defines the system in Penpot, implements it in code and checks the running interface in BrowserOS Neo.](docs/images/workflow.svg)
+![Codex develops the concept and system in Penpot, implements them in code and checks the running interface in BrowserOS Neo.](docs/images/workflow.svg)
 
 ## A task you could give it
 
@@ -18,7 +18,7 @@ rules. It downloads original skills and reference material from seven repositori
 
 With the apps connected, Codex starts from the product and the current design.
 For a new direction it reads
-Frontend Design or Taste, develops a concept in pen.dev, and defines reusable
+Frontend Design or Taste, develops a concept in Penpot, and defines reusable
 parts in Penpot. It then implements the page in your project's stack and checks
 layout and billing interactions in BrowserOS Neo. For a small change to an existing
 page, it starts at the stage that needs work.
@@ -27,6 +27,11 @@ You keep control of the brief and the approved direction. The Design instruction
 ask Codex to reuse those decisions during implementation and to check motion as
 part of the interface. Connect the apps below before asking Codex to use them.
 
+Concepts and reusable parts stay in the same Penpot workspace. For icon sets and
+artwork, Codex can create vector SVGs or use ImageGen for raster assets when
+available, then add the source assets to Penpot. The agent model directs that work;
+the image generator is a separate tool. Neither is installed by this package.
+
 ## Install with Codex
 
 Copy [the installation prompt](prompts/INSTALL.md), or paste this into Codex:
@@ -34,7 +39,7 @@ Copy [the installation prompt](prompts/INSTALL.md), or paste this into Codex:
 > Set up https://github.com/Lenfer/codex-design-workflow using its prompts/INSTALL.md.
 > Read the task and plan first, inspect the installer, then install the Design
 > workflow and all pinned sources. Configure my own BrowserOS Neo connection and
-> verify it. I will install pen.dev and Penpot myself. Preserve my existing skills
+> verify it. I will set up Penpot myself. Preserve my existing skills
 > and Codex settings, and report any remaining manual setup.
 
 You need Codex, Python 3.9+ and Git. The installer uses Python's standard library.
@@ -79,12 +84,11 @@ Restart Codex if it has not discovered the new skill. See the
 
 ## Connect the apps
 
-![The installer places Design and its source library on disk. You connect BrowserOS Neo, pen.dev and Penpot to Codex and verify live tool access.](docs/images/setup.svg)
+![The installer places Design and its source library on disk. You connect BrowserOS Neo and Penpot to Codex and verify live tool access.](docs/images/setup.svg)
 
 | App | Setup |
 | --- | --- |
 | BrowserOS Neo | The install prompt guides Codex through the official install. You complete local account setup and pair Codex from Neo's MCP connection board. |
-| pen.dev | Install the app yourself, then connect its supported agent integration. |
 | Penpot | Set up your instance or hosted account, then connect the intended workspace. |
 
 MCP is the connection through which Codex uses an app's tools. Each recipient uses
@@ -164,10 +168,10 @@ and a partial-acceptance example.
 | --- | --- |
 | Brief, concept, design system and complex checks | GPT-6.1 Sol, high |
 | Routine implementation | GPT-6.1 Sol, medium |
-| Icons and complex pen.dev animation | GPT-6 Astra, medium |
+| Icon sets, artwork and complex motion | GPT-6 Astra, medium |
 
-The workflow owner chose Astra Medium for icons and complex pen.dev animation.
-The Sol placements are recommendations. Use models available in your environment;
+These are recommendations for the agent directing the task, not the image generator.
+Use models available in your environment;
 the installer leaves your model settings intact. Read the
 [model recommendations](skills/design/references/models.md) for the scope of these choices.
 

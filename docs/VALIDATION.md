@@ -1,5 +1,29 @@
 # Validation
 
+## Penpot-only workflow: 2026-11-11
+
+Concepts and the design system now share Penpot. Vector assets use SVG; raster
+assets can use ImageGen when available. The router, README, setup prompt, model
+guidance and workflow/setup figures describe this path.
+
+Checks on macOS:
+
+- All eight installer tests passed.
+- Clean installation and repeated installation from the existing source cache
+  passed. `doctor` verified the router and all seven pinned sources. Installed
+  router files matched this checkout byte for byte.
+- Public text and private-path checks, local Markdown links, Python/JSON parsing,
+  required skill frontmatter and `git diff --check` passed.
+- Both changed HTML figures passed Diagram Design's offline self-check. Their
+  exported SVGs were opened and visually checked through BrowserOS Neo: labels
+  were readable and no overlapping or clipped content was observed.
+
+The Skill Creator validator could not run in the default Python environment
+because PyYAML is absent. Required frontmatter was checked separately. No live
+Penpot design or image-generation task was executed for this documentation change.
+These checks cover local preparation; Git history and the remote branch identify
+the published revision.
+
 ## Penpot documentation update: 2026-11-11
 
 The English router now includes explicit acceptance of each presented design
@@ -65,8 +89,8 @@ README/license commit. The owner authorized the initial publication on 2026-11-1
 including illustrated documentation. Public content and the installation-prompt
 link are verified after the initial push; the Git history identifies that release.
 
-The recipient's Codex discovery, fresh BrowserOS installation/pairing, pen.dev and
-Penpot connections have not been tested on another machine. Follow
+The recipient's Codex discovery, fresh BrowserOS installation/pairing and
+Penpot connection have not been tested on another machine. Follow
 [SETUP.md](SETUP.md) for the receiving environment's live checks. File hashes do
 not establish those connections.
 

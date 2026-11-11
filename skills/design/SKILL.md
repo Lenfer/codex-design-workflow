@@ -1,6 +1,6 @@
 ---
 name: design
-description: "Visual design and UI workflow: pen.dev concepts, Penpot design systems and assets, implementation and verification. Routes to original specialist skills while preserving the project's style. Use for UI creation, UI fixes, pen.dev and Penpot work. Excludes diagrams."
+description: "Visual design and UI workflow: Penpot concepts, design systems and assets, implementation and verification. Routes to original specialist skills while preserving the project's style. Use for UI creation, UI fixes and Penpot work. Excludes diagrams."
 ---
 
 # Design
@@ -27,7 +27,7 @@ is independent and excluded from this library.
 
 | Stage | Main environment | Handoff |
 | --- | --- | --- |
-| Concept | PenDev / pen.dev | Composition, visual direction, images, references and motion character |
+| Concept | Penpot | Composition, visual direction, images, references and motion character |
 | Design system | Penpot | Tokens, original assets, reusable components, states, pages, responsive rules and motion specification |
 | Implementation | Project code | System-based components, correct assets, behavior and working motion |
 | Verification | Native renderer; BrowserOS Neo for web | Comparison with the current reference, real scenarios, saved artifacts and remaining limits |
@@ -35,6 +35,12 @@ is independent and excluded from this library.
 Read [stages](references/stages.md) for the current handoff, and
 [motion](references/motion.md) whenever animation is involved. Complete an explicitly
 requested single stage without expanding the assignment to the whole pipeline.
+
+Keep concepts and the system in Penpot. Create vector icons and artwork as SVG;
+use ImageGen for raster illustrations and assets, following its native skill when
+available. Preserve source files and add the assets to Penpot. The selected agent
+model directs the task; image generation uses a separate tool. Do not switch models
+or launch subagents without authorization.
 
 For Penpot work, read [system and asset management](references/system.md).
 Maintain the current system, navigation and affected components during each task.
@@ -73,10 +79,9 @@ previously accepted parts do not need another approval.
 
 ## Tools and compatibility
 
-Read each tool's current native instructions before acting. For pen.dev, read its
-design skill and app state; for Penpot, read its high-level overview and relevant
-API instructions when available. Confirm the target file/page before writes. A
-direct, lossless .pen-to-Penpot import is not assumed.
+Read each tool's current native instructions before acting. For Penpot, read its
+high-level overview and relevant API instructions when available. Confirm the
+target file/page before writes.
 
 Use BrowserOS Neo MCP for websites, source pages and web QA in this workflow. Read
 its installed official skill when available. If the connection is unavailable,
