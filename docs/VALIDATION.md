@@ -22,7 +22,7 @@ Checks on macOS:
 The Skill Creator validator still cannot run in the default Python environment:
 `ModuleNotFoundError: No module named 'yaml'`. No dependency was installed for
 this documentation update. The operator accepted the illustrated README and
-authorized its commit and publication to `master` on 2026-11-11, with local
+authorized its commit and publication to `main` on 2026-11-11, with local
 development continuing on `dev`. The checks above cover preparation; Git history
 and the remote branch identify the published revision. No live Penpot file was
 edited or tested during this work.
