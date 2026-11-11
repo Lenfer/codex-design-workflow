@@ -27,6 +27,9 @@ artifact location. Confirm export/save before claiming a native file is ready.
 
 ## System and assets: Penpot
 
+Read [system and asset management](system.md) for decomposition, Review lifecycle,
+component dependencies and navigation. Apply that procedure during each Penpot task.
+
 Confirm the current file, page, libraries and authorized scope. Use the latest
 concept and user decisions. Reuse and extend an existing system.
 

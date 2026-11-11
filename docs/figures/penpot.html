@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Penpot: reusable parts and a current reference</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5f8;color:#20283c}
+.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:960px}
+svg text{font-family:Arial,Helvetica,sans-serif;fill:#20283c}
+svg .title{font-family:Georgia,serif;font-size:36px;letter-spacing:-.4px}
+svg .heading{font-size:22px;font-weight:600}
+svg .body{font-size:18px}svg .small{font-size:16px;fill:#566278}
+svg .tiny{font-size:14px;fill:#566278}
+svg .code{font-family:ui-monospace,monospace;font-size:16px;fill:#384da0}
+svg .line{fill:none;stroke:#566278;stroke-width:1.5}
+svg .rule{fill:none;stroke:#d6dbe5;stroke-width:1}
+svg .panel{fill:#fff;stroke:#b6bfce;stroke-width:1.2}
+svg .focal{fill:#e9ecf8;stroke:#384da0;stroke-width:1.5}
+svg .zone{fill:#fff;stroke:#c8cfdd;stroke-width:1}
+@media print{.diagram-container{overflow-x:visible}svg{min-width:0}}
+</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="penpot-title penpot-desc">
+<title id="penpot-title">Penpot: reusable parts and a current reference</title>
+<desc id="penpot-desc">Codex assembles tokens and assets into components and screens, then integrates only explicitly accepted Review proposals.</desc>
+<defs><marker id="penpot-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6 Z" fill="#566278"/></marker></defs>
+<rect width="960" height="600" fill="#f4f5f8"/>
+<text x="40" y="68" class="title">Penpot: reusable parts and a current reference</text><text x="40" y="108" class="body">Shared sources keep changes traceable from the design system to code.</text><path d="M304 204 H352" class="line" marker-end="url(#penpot-arrow)"/><path d="M304 304 H328 Q336 304 336 296 V244 Q336 236 344 236 H352" class="line" marker-end="url(#penpot-arrow)"/><path d="M600 220 H648" class="line" marker-end="url(#penpot-arrow)"/><rect x="40" y="156" width="264" height="80" rx="6" class="panel"/><text x="60" y="188" class="heading">Tokens</text><text x="60" y="216" class="small">Semantic values and themes</text><rect x="40" y="264" width="264" height="80" rx="6" class="panel"/><text x="60" y="296" class="heading">Source assets</text><text x="60" y="324" class="small">Originals, roles and licenses</text><rect x="352" y="156" width="248" height="120" rx="6" class="focal"/><text x="372" y="188" class="heading">Components</text><text x="372" y="220" class="small">Masters and instances</text><text x="372" y="246" class="small">Theme / Size / State</text><rect x="648" y="156" width="272" height="120" rx="6" class="panel"/><text x="668" y="188" class="heading">Current screens</text><text x="668" y="220" class="small">Shell, states and viewports</text><text x="668" y="246" class="small">Links to the main reference</text><text x="352" y="308" class="small">Motion across components and screens</text><text x="352" y="336" class="small">Triggers, timing and reduced motion</text><path d="M40 368 H920" class="rule"/><text x="40" y="400" class="heading">A proposal stays open until you decide</text><path d="M280 464 H328" class="line" marker-end="url(#penpot-arrow)"/><path d="M600 464 H648" class="line" marker-end="url(#penpot-arrow)"/><rect x="40" y="424" width="240" height="80" rx="6" class="panel"/><text x="60" y="456" class="heading">Review</text><text x="60" y="484" class="tiny">Reference + decision question</text><rect x="328" y="424" width="272" height="80" rx="6" class="focal"/><text x="348" y="456" class="heading">Your explicit decision</text><text x="348" y="484" class="tiny">Accept, reject or request changes</text><rect x="648" y="424" width="272" height="80" rx="6" class="panel"/><text x="668" y="456" class="heading">Resolve the Review</text><text x="668" y="484" class="tiny">Integrate accepted parts; keep history</text><text x="40" y="544" class="small">Partial acceptance: update the main source; keep only the open question in Review.</text><text x="40" y="572" class="small">Check navigation, saved changes and affected renders before handing off.</text></svg></div></main></body></html>

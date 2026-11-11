@@ -1,5 +1,32 @@
 # Validation
 
+## Penpot documentation update: 2026-11-11
+
+The English router now includes explicit acceptance of each presented design
+iteration and a dedicated Penpot reference covering tokens, source assets,
+components, screens, motion, navigation and Review resolution. The README adds
+an explanation and an offline SVG with its HTML source.
+
+Checks on macOS:
+
+- All eight installer tests passed.
+- A clean temporary installation from the existing source cache, repeated
+  installation and `doctor` passed for all seven pinned sources. The installed
+  Penpot reference matched this checkout byte for byte.
+- First-party text passed an English-only and private-path scan. Local Markdown
+  file targets existed; Python and JSON files parsed. `git diff --check` passed.
+- Diagram Design's self-check passed for `penpot.html`. BrowserOS Neo opened the
+  exported `penpot.svg`; full-page visual inspection found no clipped labels or
+  overlapping content. The SVG uses system fonts and requests no web fonts.
+
+The Skill Creator validator still cannot run in the default Python environment:
+`ModuleNotFoundError: No module named 'yaml'`. No dependency was installed for
+this documentation update. The operator accepted the illustrated README and
+authorized its commit and publication to `master` on 2026-11-11, with local
+development continuing on `dev`. The checks above cover preparation; Git history
+and the remote branch identify the published revision. No live Penpot file was
+edited or tested during this work.
+
 Preparation date: 2026-11-10. Executed on macOS; Linux support follows the portable
 Python/Git implementation but has not been exercised on a separate Linux machine.
 

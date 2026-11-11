@@ -120,6 +120,44 @@ Read the [full routing](skills/design/references/routing.md),
 The [source lock file](skills/design/sources.lock.json) records exact versions;
 [attribution](THIRD_PARTY.md) lists the original licenses.
 
+## How Codex keeps Penpot organized
+
+![Tokens and source assets feed reusable components and current screens. A Review stays open until the operator decides; accepted parts enter the main system and resolved material remains accessible in history.](docs/images/penpot.svg)
+
+Codex divides the chosen concept into editable parts. Tokens describe semantic
+colors, typography, spacing and dimensions. Assets keep their source files,
+derivatives, roles, scaling rules and licenses. Components reuse those foundations
+through masters, instances and independent Theme, Size and State variants. Screens
+assemble the components within a shared shell, with responsive rules and the
+states the user scenario needs. Motion has its own triggers, timing, interruption
+and reduced-motion behavior. Codex checks which values have real token bindings.
+
+This structure gives a shared change a clear home: Codex edits the master, then
+checks affected instances, themes and states. Original artwork remains reusable,
+and the code handoff includes component IDs, tokens, assets and viewport details.
+Keeping those relationships makes it easier to trace a screen back to its source
+and compare the implementation with the accepted design.
+
+Pages follow stable product areas; boards describe screens and states. A separate
+file suits an area with its own work cycle and a defined shared-component source.
+Codex reuses the project index to link the system, current screens, open proposals
+and history. A new task usually continues on an existing page.
+
+When a choice needs review, Codex creates a temporary Review with the current
+reference and a specific question. After presenting each design iteration, it asks
+whether you accept, reject or want changes, and waits for your answer. Accepted
+parts enter the main system; rejected parts leave the existing reference in place.
+For partial acceptance, Codex integrates the agreed part and keeps only the open
+question in Review. It closes resolved Reviews, updates navigation and preserves
+history with links to the current reference. Unambiguous small corrections can
+start in the main design and still need acceptance when presented.
+
+Before completing the task, Codex checks navigation, saved changes and affected
+renders. It checks dependencies before moving or deleting objects and reports
+design acceptance, code implementation and execution checks separately. Read the
+[full Penpot procedure](skills/design/references/system.md) for the working rules
+and a partial-acceptance example.
+
 ## Models
 
 | Task | Suggested model and reasoning |

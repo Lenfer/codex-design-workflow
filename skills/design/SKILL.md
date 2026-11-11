@@ -36,6 +36,27 @@ Read [stages](references/stages.md) for the current handoff, and
 [motion](references/motion.md) whenever animation is involved. Complete an explicitly
 requested single stage without expanding the assignment to the whole pipeline.
 
+For Penpot work, read [system and asset management](references/system.md).
+Maintain the current system, navigation and affected components during each task.
+After acceptance, integrate the agreed proposal and close its resolved Review.
+
+## Explicit operator acceptance
+
+After presenting each new or changed design iteration, show the result and ask:
+"Do you accept this design, reject it, or want changes?" Wait for the operator's
+answer, including for a small correction without a separate Review page.
+
+Until that answer, mark the result as awaiting acceptance. Silence, elapsed time,
+a successful render or a build do not establish acceptance. Keep the proposal
+out of the main system, leave its acceptance Review open and wait before starting
+a dependent stage. Independent checks may continue. A requested, unambiguous
+correction can be edited in place; it still needs acceptance when presented.
+
+For requested changes, revise within scope, present the next iteration and ask
+again. Record a rejected proposal as rejected. For partial acceptance, identify
+the accepted part and open questions; agreement covers only that part. Unchanged,
+previously accepted parts do not need another approval.
+
 ## Preserve the design direction
 
 - The brief, user decisions and existing system outrank aesthetic preferences in

@@ -124,7 +124,38 @@ def setup():
              'MCP lets Codex call tools in your own apps and accounts.',body)
 
 
+def penpot():
+    slug='penpot'
+    # Two inputs, one shared component source, then current screens.
+    body=arrow('M304 204 H352',slug)+arrow('M304 304 H328 Q336 304 336 296 V244 Q336 236 344 236 H352',slug)
+    body+=arrow('M600 220 H648',slug)
+    body+=rect(40,156,264,80)+text(60,188,'Tokens','heading')
+    body+=text(60,216,'Semantic values and themes','small')
+    body+=rect(40,264,264,80)+text(60,296,'Source assets','heading')
+    body+=text(60,324,'Originals, roles and licenses','small')
+    body+=rect(352,156,248,120,'focal')+text(372,188,'Components','heading')
+    body+=lines(372,220,['Masters and instances','Theme / Size / State'])
+    body+=rect(648,156,272,120)+text(668,188,'Current screens','heading')
+    body+=lines(668,220,['Shell, states and viewports','Links to the main reference'])
+    body+=text(352,308,'Motion across components and screens','small')
+    body+=text(352,336,'Triggers, timing and reduced motion','small')
+    body+='<path d="M40 368 H920" class="rule"/>'
+    body+=text(40,400,'A proposal stays open until you decide','heading')
+    body+=arrow('M280 464 H328',slug)+arrow('M600 464 H648',slug)
+    body+=rect(40,424,240,80)+text(60,456,'Review','heading')
+    body+=text(60,484,'Reference + decision question','tiny')
+    body+=rect(328,424,272,80,'focal')+text(348,456,'Your explicit decision','heading')
+    body+=text(348,484,'Accept, reject or request changes','tiny')
+    body+=rect(648,424,272,80)+text(668,456,'Resolve the Review','heading')
+    body+=text(668,484,'Integrate accepted parts; keep history','tiny')
+    body+=lines(40,544,['Partial acceptance: update the main source; keep only the open question in Review.',
+                        'Check navigation, saved changes and affected renders before handing off.'],'small',28)
+    document(slug,'Penpot: reusable parts and a current reference',
+             'Codex assembles tokens and assets into components and screens, then integrates only explicitly accepted Review proposals.',
+             'Shared sources keep changes traceable from the design system to code.',body)
+
+
 if __name__=='__main__':
     OUT.mkdir(parents=True,exist_ok=True)
-    workflow();routing();setup()
-    print('Built workflow, routing and setup HTML sources.')
+    workflow();routing();setup();penpot()
+    print('Built workflow, routing, setup and penpot HTML sources.')
