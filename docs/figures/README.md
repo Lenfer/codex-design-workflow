@@ -1,23 +1,25 @@
-# README figures
+# README diagrams
 
-The three figures use the workflow's previously selected Corporate style: pale
-paper, navy ink and one indigo focal accent. They are original vector diagrams,
-with English labels, accessible titles/descriptions and no external assets or
-network font requests. Typography uses Arial/Helvetica and Georgia system stacks;
-rendering can vary slightly by platform.
+The process diagram follows the artifacts you carry between tools. The routing
+diagram maps a task to its specialist. The setup diagram separates files on disk
+from the apps you connect through MCP.
 
-| Figure | Editable source | README image |
+| Diagram | HTML source | README image |
 | --- | --- | --- |
-| Process and model recommendations | [workflow.html](workflow.html) | [workflow.svg](../images/workflow.svg) |
+| Concept, system, code and checks | [workflow.html](workflow.html) | [workflow.svg](../images/workflow.svg) |
 | Task-to-skill routing | [routing.html](routing.html) | [routing.svg](../images/routing.svg) |
-| Installation and live verification | [setup.html](setup.html) | [setup.svg](../images/setup.svg) |
+| Installed files and app connections | [setup.html](setup.html) | [setup.svg](../images/setup.svg) |
 
-Regenerate the HTML with `python3 -B scripts/build_figures.py` from the repository
-root. The SVGs are exported from those sources with Diagram Design's
-`export_svg.py --system-fonts` helper. Diagram Design was used to author the
-documentation illustrations; it is independent of the installed Design workflow
-and is not installed as one of its dependencies.
+These are schematic illustrations, not screenshots of the apps. They use the
+project's Corporate palette, English labels, accessible titles and descriptions.
+System fonts keep them usable offline: Arial/Helvetica for labels, Georgia for
+titles and a system monospace face for code. The figures make no font requests;
+type metrics can vary by platform.
 
-The diagrams summarize the workflow. Detailed routing and compatibility constraints
-remain in the skill's reference documents. The Google DESIGN.md and Awesome Design
-MD nodes describe resources, not additional executable tools.
+Run `python3 -B scripts/build_figures.py` from the repository root to regenerate
+the HTML. Export the SVGs with Diagram Design's `export_svg.py --system-fonts`
+helper. Diagram Design is a separate authoring tool for these illustrations; the
+Design workflow installer does not install it.
+
+The Google DESIGN.md and Awesome Design MD entries are reference resources.
+See the skill's routing and compatibility documents for the full instructions.

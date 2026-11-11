@@ -1,85 +1,84 @@
-# Apps, MCP and live checks
+# Connect the apps to Codex
+
+Install the Design skill first. Then connect the apps you plan to use and test a
+read-only action in each. The skill installer manages files; each MCP connection
+gives Codex access to an app on your computer or in your account.
 
 ## Codex
 
 Install and sign into Codex using the [official setup documentation](https://developers.openai.com/codex/quickstart).
-The bundle installs skills into the supported [`.agents/skills` locations](https://developers.openai.com/codex/skills).
-It does not install Codex itself or transfer another person's account.
+Codex reads the installed Design skill from the supported
+[`.agents/skills` locations](https://developers.openai.com/codex/skills).
 
-For MCP, follow [official Codex MCP documentation](https://developers.openai.com/codex/mcp).
-Servers may use HTTP URLs or local stdio commands. Use the app's current integration
-instructions and the recipient's own values. For an HTTP integration, the CLI form is:
+Follow the [Codex MCP documentation](https://developers.openai.com/codex/mcp) and
+the app's integration instructions. A server may use an HTTP endpoint or a local
+stdio command. For an HTTP integration, substitute the URL from your own app:
 
 ```bash
 codex mcp add server-name --url YOUR_OWN_MCP_URL
 ```
 
-This is a command template, not a ready endpoint. Avoid putting token-bearing URLs
-in logs, screenshots or shared prompts. OAuth-enabled servers may require
-`codex mcp login server-name`. App-specific pairing may be different. Preserve the
-existing `~/.codex/config.toml`; do not replace it with the author's configuration.
+OAuth integrations may also need `codex mcp login server-name`. Some apps handle
+pairing through their own interface. Preserve your existing
+`~/.codex/config.toml`, and keep token-bearing URLs out of shared logs or screenshots.
 
 ## BrowserOS Neo
 
-The [official repository](https://github.com/browseros-ai/BrowserOS) documents
-macOS Homebrew installation:
+On macOS with Homebrew available, Codex can install Neo as described in the
+[official repository](https://github.com/browseros-ai/BrowserOS):
 
 ```bash
 brew tap browseros-ai/tap
 brew install --cask browseros-neo
 ```
 
-The receiving agent may run these when installing this requested environment if
-Homebrew is already available. The Python skill installer does not run them.
-For macOS, Windows and Linux x64, use the direct downloads linked by the same
-official repository. Do not install a browser build from an unrelated mirror.
+Use that repository's download links for macOS, Windows or Linux x64 if you prefer
+a direct download. The Python skill installer does not install the browser.
 
-Launch Neo, complete any necessary local account setup, then select Codex on its
-MCP connection board. Prefer that one-click connection. Otherwise use the current
-Manual Setup instructions and the endpoint displayed by your own instance.
-Do not guess a port or reuse the author's URL. Install/read the official Neo skill
-offered by that integration when available.
+Open Neo and select Codex on its MCP connection board. Complete the local account
+setup you need for your work. If you need manual configuration, use Neo's
+[manual setup instructions](https://docs.browseros.com/neo/mcp/manual) and the
+endpoint shown by your own instance. The in-app board also has the connection
+instructions. Read the official Neo skill offered by the integration.
 
-If the tools do not appear, reconnect MCP or start a new Codex session. Verify by
-listing tabs, opening a temporary public page, reading it and closing only that
-task's tab. Record the URL, date, action and outcome locally. Keep profile contents,
-cookies and sensitive raw logs out of Git.
-
-The [Neo manual setup page](https://docs.browseros.com/neo/mcp/manual) is the
-vendor's linked reference. During preparation on 2026-11-10 it returned an empty
-page in Neo; the repository's installation and connection instructions were
-readable. Consult the current in-app connection board if the documentation remains
-unavailable. No endpoint or unattended pairing behavior is assumed by this package.
+Reconnect MCP or start a new Codex session if the tools have not appeared. To test
+the connection, ask Codex to list tabs, open a public page in a temporary tab, read
+it and close that tab. Record the URL, date and result in your project's existing
+notes. Keep profiles, cookies and sensitive raw logs out of Git.
 
 ## pen.dev
 
-Install from [pen.dev](https://www.pen.dev/) yourself, then follow its supported
-Codex/agent integration. In the receiving session, confirm that its tools appear;
-read the native design instructions and current app state before any writes.
-The authoring environment uses a `pencil`-named MCP integration, but integration
-names may differ. A tool namespace alone does not establish a live app connection.
+Install [pen.dev](https://www.pen.dev/) yourself. Configuring its Codex integration
+is a manual step; this bundle does not configure it. Follow the app's current
+Codex setup instructions, then ask Codex to read the native design instructions
+and current app state. Some integrations expose these tools under the name `pencil`.
+Confirm the intended app and file before making design changes.
 
 ## Penpot
 
-Set up [Penpot](https://penpot.app/) yourself, using its hosted service or your own
-deployment. See the [official Penpot repository](https://github.com/penpot/penpot).
-Connect the supported integration for your instance and account. Confirm the
-intended workspace/file with a read-only overview before writing. This bundle
-does not install a Penpot server, invent a universal MCP endpoint or assume direct
-lossless import from pen.dev.
+Set up [Penpot](https://penpot.app/) through its hosted service or your own
+deployment. The [official repository](https://github.com/penpot/penpot) has the
+server source and setup information.
 
-## Setup report
+Choosing and configuring a Penpot MCP integration is a manual step. Select one
+that supports your deployment and follow that integration's documentation; this
+bundle does not choose, install or configure it. Once its tools appear in Codex,
+read the overview and confirm the workspace and file before making changes. The
+bundle does not install a Penpot server. A transfer from pen.dev to Penpot still needs
+editable components and assets; inspect the result instead of assuming a lossless
+file import.
 
-Report each layer separately:
+## Verify the setup
 
-| Layer | Proof |
+| Check | Evidence |
 | --- | --- |
-| Files installed | `install.py doctor` succeeds; all seven sources resolve |
-| Skill discovered | Codex can load `design` in the intended project/session |
-| MCP configured | The recipient's integration is listed in Codex |
-| Neo connected | A real read-only browser task succeeds |
-| pen.dev connected | Native instructions/state can be read from the correct app |
-| Penpot connected | Overview/file state can be read from the intended instance |
+| Installed files | `install.py doctor` succeeds and all seven sources resolve. |
+| Skill discovery | Codex can read `design` in the intended project and session. |
+| MCP configuration | Codex lists the integration you configured. |
+| Neo access | Codex opens and reads a public page through Neo. |
+| pen.dev access | Codex reads the design instructions and state of the intended app. |
+| Penpot access | Codex reads the overview and file state in the intended instance. |
 
-Mark unavailable tools as pending. File installation does not establish live app
-connectivity, and an author's successful setup does not verify a recipient's setup.
+Mark a check as pending if the tool is unavailable. Run these checks on each
+recipient's computer; a successful installation elsewhere does not verify their
+connections.

@@ -1,6 +1,8 @@
 # Installation prompt
 
-Paste the following into Codex:
+Paste this into Codex in the project where you want to try the workflow. Codex
+will inspect the installer, install the skills and guide you through app pairing.
+You will install pen.dev and Penpot yourself.
 
 ```text
 Set up the Design workflow from https://github.com/Lenfer/codex-design-workflow.

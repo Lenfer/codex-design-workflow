@@ -1,8 +1,8 @@
 # Optional model recommendations
 
-These are the workflow owner's presentation recommendations, not measured results,
-required model IDs or automatic settings. Availability and names depend on the
-recipient's Codex environment. Keep their chosen model unless a change is requested.
+The workflow owner recommends the following model placements for this process.
+No benchmarks informed these recommendations. Choose models available in the
+recipient's Codex environment and preserve their settings unless they request a change.
 
 | Task | Suggested model label | Reasoning |
 | --- | --- | --- |
@@ -12,7 +12,7 @@ recipient's Codex environment. Keep their chosen model unless a change is reques
 | Routine implementation | GPT-6.1 Sol | Medium |
 | Complex implementation, diagnosis and verification | GPT-6.1 Sol | High |
 
-The owner specifically selected Astra Medium for the icon/complex-animation route.
-The other rows are suggestions. Model choice refers to the controlling agent;
-pen.dev's own asset generation may use its own service. This bundle does not switch
-models, enable API access or claim that all recipients have these models.
+The owner selected Astra Medium for icons and complex pen.dev animation. The Sol
+rows are suggestions. These settings describe the agent controlling the tools;
+pen.dev may use its own service to generate assets. The bundle leaves model settings
+and API access unchanged. Availability depends on the recipient's account.
